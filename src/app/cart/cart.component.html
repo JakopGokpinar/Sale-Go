@@ -1,0 +1,53 @@
+
+<div class="main-div">
+   
+  <div class="shipping">
+    <app-shipping></app-shipping>
+  </div>
+
+  <h3>Products</h3>
+
+  <div class="products">
+    <div class="cart-item" *ngFor="let item of items" >
+      <span>{{ item.name }} </span>
+      <span>{{ item.price | currency }}</span>
+      <i class="material-icons" id="delete" (click)="removeFromCart(item)">delete</i>
+    </div>  
+  </div> 
+
+  <h3>Product Total:  {{productTotal | currency}}</h3>
+  
+</div>
+
+
+
+<!--
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div>
+    <label for="name">
+      Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="surname">
+      Surname
+    </label>
+    <input id="surname" type="text" formControlName="surname">
+  </div>
+
+  <div>
+    <label for="address">
+      Address
+    </label>
+    <input id="address" type="text" formControlName="address">
+  </div>
+
+  <button class="button" type="submit">Purchase</button>
+
+</form>
+  
+-->

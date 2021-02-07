@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "salego-63fa8": {
+      "hosting": {
+        "sale-app": [
+          "salego-63fa8"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "salego-63fa8"
+  }
+}

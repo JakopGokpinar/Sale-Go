@@ -1,0 +1,23 @@
+<h3>Shipping Methods</h3>
+
+<div class="main">
+    <div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+        <input  type="radio" 
+                id="price" 
+                name="shipping" 
+                value="price" 
+                (click)="addShippingPrice(shipping)">
+        <span>{{ shipping.type }}</span>
+        <span>{{ shipping.price | currency}}</span>
+    </div>
+
+    <h3 class="total">Total:  {{total | currency}}</h3>
+
+    <button (click)="payment()" 
+            id="pay-button">
+            <i class="material-icons" id="pay">
+            payment</i>
+        Go To Payment
+    </button>
+    <p id="warning">*Please be aware of that this web site does not sell any real products!</p>
+</div>

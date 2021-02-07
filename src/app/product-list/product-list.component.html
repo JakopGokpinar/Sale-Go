@@ -1,0 +1,27 @@
+
+<div *ngFor="let product of products" class="products">
+  
+  <img *ngIf="product.image" src="../../assets/images/{{product.image}}" class="phone-images"/>
+
+  <h3 class="product-name">
+      {{ product.name}}
+  </h3>
+
+  <p class="product-price">
+    {{ product.price | currency}}
+  </p>
+
+  <button (click)="addToCart(product)" class="buy-details">
+    Buy
+  </button>
+
+  <button [title]="product.name + ' details'" [routerLink]="['/products',product.id]" class="buy-details">
+    Details
+  </button>
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

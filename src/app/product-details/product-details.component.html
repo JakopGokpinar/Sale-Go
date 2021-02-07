@@ -1,0 +1,33 @@
+
+<div *ngIf="product">
+
+  <div class="image-frame">
+    <img *ngIf="product.image" src="../../assets/images/{{product.image}}" class="product-image"/>
+  </div>
+
+  <div class="product-props">
+    <h2 class="prop">{{ product.name}}</h2>
+    <h3 class="prop">{{ product.price | currency}}</h3>
+    <ul>
+      <li class="list-item">Inch: {{product.description[0] }}</li>
+      <li class="list-item">Camera: {{product.description[1] }}</li>
+      <li>Memory: {{product.description[2] }}</li>
+    </ul>
+  </div>
+        
+  <div class="buttons">
+    <button (click)="share()" class="button">Share</button>
+    <button (click)="onNotify()"class="button">Notify Me</button>
+    <button (click)="addToCart(product)" class="button">Buy</button>
+  </div>
+
+    <!-- 
+
+      
+<app-product-alerts 
+    [product] = "product"
+    (notify)="onNotify()">
+  </app-product-alerts>
+      
+  -->
+</div>

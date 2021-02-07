@@ -1,0 +1,17 @@
+.main{
+    position: relative;
+    width: 100%;
+    height: 230%;
+}
+.pay-button{
+    position: absolute;
+    bottom: 0%;
+}
+#pay{
+    margin-right: 10px;
+    color:  white;
+}
+#warning{
+    margin-top: 5%;
+    color: red;
+}

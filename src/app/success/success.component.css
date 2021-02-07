@@ -1,0 +1,19 @@
+.text-div{
+    height: max-content;
+    width: 341.125px;
+    margin-left: 150%;
+    margin-top: 15%;
+}
+.img-div{
+    height: max-content;
+    width: max-content;
+    margin-left: 145%;
+    margin-top: 18%;
+}
+#success-text{
+    text-align: center;   
+}
+#tick{
+    height: 380px;
+    width: 380px;
+}

@@ -1,4 +1,8 @@
-# SaleApp
+# SaleGo
+
+This is an E-Shopping Site for test where I try to intensify what I have learnt in Angular.
+
+The link of the project: https://salego.ml/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
